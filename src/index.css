@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,12 +11,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-optical-sizing: auto;
     font-size: 16px;
     user-select: none;
-  }
-  #app {
-    min-height: 100vh;
-    width: 100%;
   }
   h1 {
     @apply text-[30px] sm:text-[40px] md:text-[46px] lg:text-[50px] xl:text-[56px];
@@ -35,9 +35,18 @@
     @apply text-[18px];
   }
   a {
-    @apply text-[20px];
+    @apply text-[18px] xl:text-[20px] text-neon font-bold relative;
   }
   p {
     @apply text-[1rem];
+  }
+}
+
+@layer utilities {
+  .app {
+    @apply min-h-screen w-full bg-alice dark:bg-eerie transition-all ease-in-out duration-700 flex flex-col justify-center items-center;
+  }
+  .nav-link-effect {
+    @apply after:absolute after:bottom-[-4px] after:left-0 after:content-[''] after:w-0 after:h-[3px] after:bg-neon hover:after:w-full after:duration-500 after:ease-in-out;
   }
 }
