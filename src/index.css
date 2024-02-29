@@ -20,10 +20,10 @@
     @apply text-[30px] sm:text-[40px] md:text-[46px] lg:text-[50px] xl:text-[56px];
   }
   h2 {
-    @apply text-[24px] sm:text-[36px];
+    @apply text-[28px] sm:text-[36px];
   }
   h3 {
-    @apply text-[32px];
+    @apply text-[26px] lg:text-[32px];
   }
   h4 {
     @apply text-[24px];
@@ -48,5 +48,23 @@
   }
   .nav-link-effect {
     @apply after:absolute after:bottom-[-4px] after:left-0 after:content-[''] after:w-0 after:h-[3px] after:bg-neon hover:after:w-full after:duration-500 after:ease-in-out;
+  }
+  .home-title {
+    @apply font-bold text-neon text-left sm:text-center;
+  }
+  .home-subtitle {
+    @apply font-semibold text-rich dark:text-alice transition-all ease-in-out duration-700 w-[80%] md:w-[650px] text-left sm:text-center;
+  }
+  .about-section {
+    @apply w-full min-h-screen py-36 lg:pt-40 flex flex-col gap-y-24 md:gap-y-36 lg:gap-y-44 justify-center sm:items-center;
+  }
+  .about-title {
+    @apply text-neon font-semibold transition-all ease-in-out duration-700;
+  }
+  .about-description {
+    @apply text-rich dark:text-alice text-left sm:text-justify font-medium transition-all ease-in-out duration-700;
+  }
+  .about-benefits-box {
+    @apply bg-aliceBlue dark:bg-black w-[320px] h-[170px] p-[0rem_0.75rem] flex flex-col items-start justify-evenly rounded-[4px] transition-all ease-in-out duration-700 shadow-[1px_1px_8px_2px_rgba(0,0,0,0.1)];
   }
 }

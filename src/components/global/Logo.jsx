@@ -7,7 +7,7 @@ const Logo = () => {
         <span className="text-neon text-[24px] sm:text-[36px] font-bold">
           D
         </span>
-        ream{' '}
+        ream{''}
         <span className="text-neon text-[24px] sm:text-[36px] font-bold">
           S
         </span>
