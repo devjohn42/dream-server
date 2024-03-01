@@ -1,18 +1,23 @@
-import AboutTitle from '../components/about/AboutTitle';
-import AboutDescription from '../components/about/AboutDescription';
-import AboutImage from '../components/about/AboutImage';
+import PageTitle from '../components/global/PageTitle';
+import PageDescription from '../components/global/PageDescription';
+import PageImage from '../components/global/PageImage';
 import AboutInfoContainer from '../components/about/AboutInfoContainer';
 import AboutBenefitsContainer from '../components/about/AboutBenefitsContainer';
 
 const About = () => {
   return (
-    <div className="about-section">
+    <div className="w-full min-h-screen py-36 lg:pt-40 flex flex-col gap-y-24 md:gap-y-36 lg:gap-y-44 justify-center sm:items-center">
       <div className="w-full flex flex-col-reverse lg:flex-row justify-evenly items-center">
-        <div className="w-[90%] lg:w-[600px]">
-          <AboutTitle />
-          <AboutDescription />
+        <div className="w-[90%] lg:w-[600px] flex flex-col items-start md:items-center lg:items-start">
+          <PageTitle title={'About Us'} />
+          <PageDescription
+            description={`Your ultimate destination for Discord server customizations and
+      specialized services. We believe in the power of online communication and
+      building vibrant communities. With a passionate and dedicated team we are
+      here to take your Discord experience to new heights.`}
+          />
         </div>
-        <AboutImage />
+        <PageImage src={'/about.png'} />
       </div>
       <AboutInfoContainer />
       <AboutBenefitsContainer />

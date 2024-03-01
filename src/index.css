@@ -55,15 +55,6 @@
   .home-subtitle {
     @apply font-semibold text-rich dark:text-alice transition-all ease-in-out duration-700 w-[80%] md:w-[650px] text-left sm:text-center;
   }
-  .about-section {
-    @apply w-full min-h-screen py-36 lg:pt-40 flex flex-col gap-y-24 md:gap-y-36 lg:gap-y-44 justify-center sm:items-center;
-  }
-  .about-title {
-    @apply text-neon font-semibold transition-all ease-in-out duration-700;
-  }
-  .about-description {
-    @apply text-rich dark:text-alice text-left sm:text-justify font-medium transition-all ease-in-out duration-700;
-  }
   .about-benefits-box {
     @apply bg-aliceBlue dark:bg-black w-[320px] h-[170px] p-[0rem_0.75rem] flex flex-col items-start justify-evenly rounded-[4px] transition-all ease-in-out duration-700 shadow-[1px_1px_8px_2px_rgba(0,0,0,0.1)];
   }

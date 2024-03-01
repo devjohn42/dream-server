@@ -1,7 +1,7 @@
 export const about = [
   {
     title: 'Who We Are',
-    description: `At DS, we are a group of enthusiasts who understand the importance
+    description: `We are a group of enthusiasts who understand the importance
     of an engaging online environment, especially for businesses,
     schools, and gaming communities. We believe that each Discord server
     is unique, just like the communities they host. Our goal is to
