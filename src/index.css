@@ -44,7 +44,7 @@
 
 @layer utilities {
   .app {
-    @apply min-h-screen w-full bg-alice dark:bg-eerie transition-all ease-in-out duration-700 flex flex-col justify-center items-center;
+    @apply min-h-screen w-full bg-alice dark:bg-eerie flex flex-col justify-center items-center;
   }
   .nav-link-effect {
     @apply after:absolute after:bottom-[-4px] after:left-0 after:content-[''] after:w-0 after:h-[3px] after:bg-neon hover:after:w-full after:duration-500 after:ease-in-out;
@@ -53,9 +53,9 @@
     @apply font-bold text-neon text-left sm:text-center;
   }
   .home-subtitle {
-    @apply font-semibold text-rich dark:text-alice transition-all ease-in-out duration-700 w-[80%] md:w-[650px] text-left sm:text-center;
+    @apply font-semibold text-rich dark:text-alice w-[80%] md:w-[650px] text-left sm:text-center;
   }
   .about-benefits-box {
-    @apply bg-aliceBlue dark:bg-black w-[320px] h-[170px] p-[0rem_0.75rem] flex flex-col items-start justify-evenly rounded-[4px] transition-all ease-in-out duration-700 shadow-[1px_1px_8px_2px_rgba(0,0,0,0.1)];
+    @apply bg-aliceBlue dark:bg-black w-[90%] h-[170px] sm:w-[320px] sm:h-[170px] p-[0rem_0.75rem] flex flex-col items-start justify-evenly rounded-[4px] border-neon border-[2px] shadow-[1px_1px_8px_2px_rgba(0,0,0,0.1)];
   }
 }

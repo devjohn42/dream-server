@@ -3,7 +3,7 @@ import ServiceOfferedBox from './ServiceOfferedBox';
 
 const ServiceOfferedContainer = () => {
   return (
-    <div className="w-full mb-36 lg:mb-40 flex flex-col items-center gap-y-6 lg:gap-y-4 md:py-10">
+    <div className="w-full mb-36 lg:mb-40 flex flex-col items-center md:py-10">
       {servicesOffered.map((serviceOffered) => {
         return (
           <ServiceOfferedBox

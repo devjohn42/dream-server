@@ -1,7 +1,6 @@
 import PageTitle from '../components/global/PageTitle';
 import PageDescription from '../components/global/PageDescription';
 import PageImage from '../components/global/PageImage';
-
 import ServiceOfferedContainer from '../components/services/ServiceOfferedContainer';
 import ServiceIncludedContainer from '../components/services/ServiceIncludedContainer';
 

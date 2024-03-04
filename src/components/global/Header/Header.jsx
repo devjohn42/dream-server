@@ -49,36 +49,16 @@ const Header = () => {
               : 'flex flex-col gap-y-5 items-center h-0 opacity-0'
           }`}
         >
-          <NavLink
-            to="/about"
-            href="#"
-            className="text-[18px]"
-            onClick={hadleToggleNav}
-          >
+          <NavLink to="/about" href="#" className="text-[18px]" onClick={hadleToggleNav}>
             About
           </NavLink>
-          <NavLink
-            to="/services"
-            href="#"
-            className="text-[18px]"
-            onClick={hadleToggleNav}
-          >
+          <NavLink to="/services" href="#" className="text-[18px]" onClick={hadleToggleNav}>
             Services
           </NavLink>
-          <NavLink
-            to="/pricing"
-            href="#"
-            className="text-[18px]"
-            onClick={hadleToggleNav}
-          >
+          <NavLink to="/pricing" href="#" className="text-[18px]" onClick={hadleToggleNav}>
             Pricing
           </NavLink>
-          <NavLink
-            to="/contact"
-            href="#"
-            className="text-[18px]"
-            onClick={hadleToggleNav}
-          >
+          <NavLink to="/contact" href="#" className="text-[18px]" onClick={hadleToggleNav}>
             Contact
           </NavLink>
         </nav>
