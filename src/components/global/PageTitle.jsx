@@ -1,5 +1,5 @@
 const PageTitle = ({ title }) => {
-  return <h2 className="text-neon font-semibold">{title}</h2>;
+  return <h2 className="text-neon font-semibold leading-[100%]">{title}</h2>;
 };
 
 export default PageTitle;

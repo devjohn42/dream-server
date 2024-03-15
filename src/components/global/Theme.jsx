@@ -5,7 +5,7 @@ const Theme = () => {
   const [theme, setTheme] = React.useState(localStorage.getItem('theme') || 'light');
   const [isLoading, setIsLoading] = React.useState(true);
 
-  React.useEffect(() => {
+  React.useLayoutEffect(() => {
     if (theme === 'dark') {
       document.documentElement.classList.add('dark');
     } else {

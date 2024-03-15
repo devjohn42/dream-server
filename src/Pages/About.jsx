@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div className="w-full min-h-screen pb-10 lg:pt-[94px] flex flex-col justify-center sm:items-center">
       <div className="w-full py-36 lg:py-40 flex flex-col-reverse lg:flex-row justify-evenly items-center">
-        <div className="w-[90%] lg:w-[600px] flex flex-col items-start md:items-center lg:items-start">
+        <div className="w-[90%] lg:w-[600px] flex flex-col gap-y-2 items-start md:items-center lg:items-start">
           <PageTitle title={'About Us'} />
           <PageDescription
             description={`
