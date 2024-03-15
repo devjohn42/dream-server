@@ -2,6 +2,7 @@ import { HashRouter } from 'react-router-dom';
 import Header from './components/global/Header/Header';
 import { AppRouter } from './router/AppRouter';
 import Theme from './components/global/Theme';
+import Footer from './components/global/Footer';
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
         <Header />
         <Theme />
         <AppRouter />
+        <Footer />
       </HashRouter>
     </div>
   );
