@@ -13,8 +13,6 @@ Uma modelo de plataforma especializada na criação e personalização de servid
 
 As animações simples do site foram criadas com o Framer Motion. Caso você tenha conhecimento em animações utilizando essa lib, sinta-se à vontade para melhoras ou criar novas animações.
 
-Nosso site inclui animações simples que adicionam um toque de dinamismo. Com um conhecimento básico, é fácil modificar ou melhorar essas animações, permitindo que cada pessoa personalize a experiência de acordo com suas preferências.
-
 ### 🤖 Visite o Projeto
 
 - Website [Dream Server](https://dream-server.netlify.app)
