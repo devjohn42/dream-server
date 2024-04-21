@@ -4,11 +4,17 @@ import PageImage from '../components/global/PageImage';
 import AboutInfoContainer from '../components/about/AboutInfoContainer';
 import AboutBenefitsContainer from '../components/about/AboutBenefitsContainer';
 
+import { defaultaAnimations } from '../database/animations.js';
+import { motion } from 'framer-motion';
+
 const About = () => {
   return (
-    <div className="w-full min-h-screen pb-10 lg:pt-[94px] flex flex-col justify-center sm:items-center">
-      <div className="w-full py-36 lg:py-40 flex flex-col-reverse lg:flex-row justify-evenly items-center">
-        <div className="w-[90%] lg:w-[600px] flex flex-col gap-y-2 items-start md:items-center lg:items-start">
+    <div className='w-full min-h-screen pb-10 lg:pt-[94px] flex flex-col justify-center sm:items-center'>
+      <div className='w-full py-36 lg:h-screen flex flex-col-reverse lg:flex-row justify-evenly items-center'>
+        <motion.div
+          {...defaultaAnimations.leftToRight}
+          className='w-[90%] lg:w-[600px] flex flex-col gap-y-2 items-start md:items-center lg:items-start'
+        >
           <PageTitle title={'About Us'} />
           <PageDescription
             description={`
@@ -17,16 +23,19 @@ const About = () => {
             building vibrant communities. With a passionate and dedicated team we are
             here to take your Discord experience to new heights.`}
           />
-        </div>
-        <PageImage src={'/about.png'} />
+        </motion.div>
+        <motion.div {...defaultaAnimations.rightToLeft}>
+          <PageImage src={'/about.png'} />
+        </motion.div>
       </div>
       <AboutInfoContainer />
       <AboutBenefitsContainer />
-      <div className="w-full xl:w-[1000px] flex items-center justify-center">
-        <h5 className="w-[90%] text-rich dark:text-alice font-medium text-center">
-          Join us on the journey to create memorable online communities. We transform Discord
-          servers with passion, expertise, and an unwavering commitment to excellence. Contact us
-          today and discover how we can take your Discord experience to the next level!
+      <div className='w-full xl:w-[1000px] flex items-center justify-center'>
+        <h5 className='w-[90%] text-rich dark:text-alice font-medium text-center'>
+          Join us on the journey to create memorable online communities. We
+          transform Discord servers with passion, expertise, and an unwavering
+          commitment to excellence. Contact us today and discover how we can
+          take your Discord experience to the next level!
         </h5>
       </div>
     </div>
